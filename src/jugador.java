@@ -1,15 +1,32 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+public class jugador {
+    String avatar;
+    int edad;
+    String pais;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    public jugador() {
+        avatar = "Enner";
+        edad = 40;
+        pais = "Ecuador";
+    }
+    public jugador (String avatar, int edad, String pais) {
+        this.avatar = avatar;
+        this.edad = edad;
+        this.pais = pais;
+    }
+
+    public void imprimir_patear (){
+        System.out.println("------------------------------------------------------------------------------------------------");
+        System.out.print("El jugador: "+avatar+" tiene: "+edad+" años de edad, y es de :"+pais+" se encuentra pateando");
+    }
+    public void imprimir_correr (){
+        System.out.print(" y corriendo");
+        System.out.println(" ");
+        System.out.println("-------------------------------------------------------------------------------------------------");
+    }
+    public void imprimir_saltar(int s){
+    int saltar=2+s;
+        System.out.print(", saltando "+saltar+"veces :D");
     }
 }
